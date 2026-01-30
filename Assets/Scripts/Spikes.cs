@@ -12,6 +12,7 @@ public class Spikes : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // deals damage on collision with player
         if (collision.gameObject == player)
         {
             player.GetComponent<PlayerHealth>().LoseLives(1);

@@ -11,6 +11,7 @@ public class PlayeMovement : MonoBehaviour
     public float currentAnimals;
     public Animator animator;
 
+
     void Start()
     {
 
@@ -21,7 +22,7 @@ public class PlayeMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-
+        // makes the player move forward
         if(moving)
             rb2D.position += Vector2.right * movementSpeed;
     }
@@ -33,12 +34,14 @@ public class PlayeMovement : MonoBehaviour
 
     public string GetCurrentAnimal()
     {
+        // sets the animation based on the current amount of animals
         string currentAnim = currentAnimals.ToString() + "Anim";
         return currentAnim;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // bounces the player from objects
         if (collision.gameObject.CompareTag("Spike") || collision.gameObject.CompareTag("BreakableObj"))
         {
             // Calculate the direction away from the wall

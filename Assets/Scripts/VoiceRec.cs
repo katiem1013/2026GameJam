@@ -36,12 +36,27 @@ public class VoiceRec : MonoBehaviour
 
     private void RecognisedSpeech(PhraseRecognizedEventArgs speech)
     {
+        // listens for the speech and prints it in the console
         Debug.Log(speech.text);
         actions[speech.text].Invoke();
     }
 
+    public void ClearAudio()
+    {
+        // clears the old audio so it can be remade on a restart
+        if (keywordRecognizer != null && keywordRecognizer.IsRunning)
+        {
+            keywordRecognizer.OnPhraseRecognized -= RecognisedSpeech;
+            keywordRecognizer.Stop();
+            keywordRecognizer.Dispose();
+            // Crucial step to force a hard reset
+            PhraseRecognitionSystem.Shutdown();
+        }
+    }
+
     private void Start()
     {
+        // voice controls
         actions.Add("boing", Jump);
         actions.Add("jump", Jump);
 
@@ -52,6 +67,7 @@ public class VoiceRec : MonoBehaviour
         actions.Add("bounce", WallJump);
         actions.Add("hiyah", WallJump);
 
+        // creates the words to listen
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += RecognisedSpeech;
         keywordRecognizer.Start();
@@ -61,15 +77,15 @@ public class VoiceRec : MonoBehaviour
 
     private void Update()
     {
+        // looks for the closest smashable obj if there is one
         if(FindClosestSmashableObj()!= null)
             explodable = FindClosestSmashableObj().GetComponent<Explodable>();
-
-        print(explodable);
 
         // jumping and wall slide
 
         WallSlide();
 
+        // makes the player face left when on the ground
         if (!isFacingRight && IsGrounded() && !isWallJumping && !isWallSliding)
         {
             isFacingRight = true;
@@ -78,6 +94,7 @@ public class VoiceRec : MonoBehaviour
             transform.localScale = localScale;
         }
 
+        // allows the jump off the wall if wall jumping
         if (isWallSliding)
         {
             isWallJumping = false;
@@ -104,6 +121,7 @@ public class VoiceRec : MonoBehaviour
     // smashing stuff
     public GameObject FindClosestSmashableObj()
     {
+        // finds the cloest smashable object
         GameObject[] gos;
         gos = GameObject.FindGameObjectsWithTag("BreakableObj");
         GameObject closest = null;
@@ -126,6 +144,7 @@ public class VoiceRec : MonoBehaviour
 
     private void Jump()
     {
+        // adds to the velocity to make the character jump
         rb2D.linearVelocity = new Vector2(0, jumpForce);
         WallJump();
     }
@@ -133,13 +152,14 @@ public class VoiceRec : MonoBehaviour
    
     private void WallJump()
     {
-
+        // character bounces off the wall
         if (wallJumpingCounter > 0f)
         {
             isWallJumping = true;
             rb2D.linearVelocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
             wallJumpingCounter = 0f;
 
+            // changes the direction to the opposite
             if (transform.localScale.x != wallJumpingDirection)
             {
                 isFacingRight = !isFacingRight;
@@ -171,7 +191,7 @@ public class VoiceRec : MonoBehaviour
 
     private void WallSlide()
     {
-
+        // causes the player to wall slide when against the wall 
         if (IsWalled() && !IsGrounded())
         {
             playeMovement.moving = false;
