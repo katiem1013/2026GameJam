@@ -61,7 +61,9 @@ public class VoiceRec : MonoBehaviour
 
     private void Update()
     {
-        explodable = FindClosestSmashableObj().GetComponent<Explodable>();
+        if(FindClosestSmashableObj()!= null)
+            explodable = FindClosestSmashableObj().GetComponent<Explodable>();
+
         print(explodable);
 
         // jumping and wall slide
