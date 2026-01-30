@@ -22,9 +22,9 @@ public class VoiceRec : MonoBehaviour
 
     private bool isWallJumping;
     private float wallJumpingDirection;
-    private float wallJumpingTime = 0.1f;
+    private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
-    private float wallJumpingDuration = 0.2f;
+    private float wallJumpingDuration = 0.4f;
     private Vector2 wallJumpingPower = new Vector2(4f, 8f);
 
     [SerializeField] private Transform groundCheck;
@@ -50,6 +50,7 @@ public class VoiceRec : MonoBehaviour
 
         actions.Add("wall", WallJump);
         actions.Add("bounce", WallJump);
+        actions.Add("hiyah", WallJump);
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += RecognisedSpeech;
@@ -60,6 +61,11 @@ public class VoiceRec : MonoBehaviour
 
     private void Update()
     {
+        explodable = FindClosestSmashableObj().GetComponent<Explodable>();
+        print(explodable);
+
+        // jumping and wall slide
+
         WallSlide();
 
         if (!isFacingRight && IsGrounded() && !isWallJumping && !isWallSliding)
@@ -85,18 +91,44 @@ public class VoiceRec : MonoBehaviour
         }
     }
 
-    private void Jump()
-    {
-        rb2D.linearVelocity = new Vector2(0, jumpForce);
-        WallJump();
-    }
 
+    // smash commands 
     private void Smash()
     {
         explodable.explode();
         Destroy(explodable.gameObject.GetComponent<BoxCollider2D>());
     }
 
+    // smashing stuff
+    public GameObject FindClosestSmashableObj()
+    {
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("BreakableObj");
+        GameObject closest = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = transform.position;
+        foreach (GameObject go in gos)
+        {
+            Vector3 diff = go.transform.position - position;
+            float curDistance = diff.sqrMagnitude;
+            if (curDistance < distance)
+            {
+                closest = go;
+                distance = curDistance;
+            }
+        }
+        return closest;
+    }
+
+    // jump commands
+
+    private void Jump()
+    {
+        rb2D.linearVelocity = new Vector2(0, jumpForce);
+        WallJump();
+    }
+
+   
     private void WallJump()
     {
 
@@ -117,6 +149,8 @@ public class VoiceRec : MonoBehaviour
             Invoke(nameof(StopWallJumping), wallJumpingDuration);
         }
     }
+
+    // more jumping stuff
 
     private void StopWallJumping()
     {

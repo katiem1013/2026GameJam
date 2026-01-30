@@ -13,6 +13,7 @@ TagManager:
   - ExplosionFX
   - Bullet
   - HealthBar
+  - Spike
   layers:
   - Default
   - TransparentFX

@@ -8,17 +8,34 @@ public class PlayeMovement : MonoBehaviour
 
     public bool moving;
 
-    private void Start()
+    public float currentAnimals;
+    public Animator animator;
+
+    void Start()
     {
+
+        currentAnimals = 4;
         moving = true;
         rb2D = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
     {
+
         if(moving)
             rb2D.position += Vector2.right * movementSpeed;
     }
-
     
+    void Update()
+    {
+        GetComponent<Animator>().SetTrigger(GetCurrentAnimal());
+    }
+
+    public string GetCurrentAnimal()
+    {
+        string currentAnim = currentAnimals.ToString() + "Anim";
+        return currentAnim;
+    }
+
+
 }

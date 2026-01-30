@@ -101,6 +101,7 @@ public class Explodable : MonoBehaviour
                 Debug.Log("invalid choice");
                 break;
         }
+
         //sets additional aspects of the fragments
         foreach (GameObject p in fragments)
         {
