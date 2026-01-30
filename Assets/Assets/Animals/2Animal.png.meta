@@ -1,34 +1,31 @@
 fileFormatVersion: 2
-guid: ae777bc10b3335d4a8e0464150ea544c
+guid: f3e97d2f9cecb26489f6bd1c82ac4635
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3114291619668919297
-    second: Four_Animals_0
+      213: 6049960884306057021
+    second: 2Animal 1_0
   - first:
-      213: -644566893464411544
-    second: Four_Animals_1
+      213: -9033393703218927490
+    second: 2Animal 1_1
   - first:
-      213: -5918027786458249756
-    second: Four_Animals_2
+      213: 6174088559100016972
+    second: 2Animal 1_2
   - first:
-      213: -5512354119644548904
-    second: Four_Animals_3
+      213: 7476858189471050513
+    second: 2Animal 1_3
   - first:
-      213: -39961826741853411
-    second: Four_Animals_4
+      213: -993138006705378385
+    second: 2Animal 1_4
   - first:
-      213: 670067842933362328
-    second: Four_Animals_5
+      213: 7696759657134832550
+    second: 2Animal 1_5
   - first:
-      213: 3788630242178123470
-    second: Four_Animals_6
+      213: -1909105496338283039
+    second: 2Animal 1_6
   - first:
-      213: -5801162340761202572
-    second: Four_Animals_7
-  - first:
-      213: -9111817372998927997
-    second: Four_Animals_8
+      213: -273736824430469434
+    second: 2Animal 1_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -137,13 +134,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Four_Animals_0
+      name: 2Animal 1_0
       rect:
         serializedVersion: 2
-        x: 453
-        y: 1702
-        width: 257
-        height: 332
+        x: 20
+        y: 774
+        width: 192
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10487555abf283b20800000000000000
-      internalID: 3114291619668919297
+      spriteID: d371216ce57c5f350800000000000000
+      internalID: 6049960884306057021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Four_Animals_1
+      name: 2Animal 1_1
       rect:
         serializedVersion: 2
-        x: 1273
-        y: 1707
-        width: 238
-        height: 333
+        x: 339
+        y: 779
+        width: 176
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 862a31153d90e07f0800000000000000
-      internalID: -644566893464411544
+      spriteID: e78a263b940f2a280800000000000000
+      internalID: -9033393703218927490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Four_Animals_2
+      name: 2Animal 1_2
       rect:
         serializedVersion: 2
-        x: 8
-        y: 1670
-        width: 8
-        height: 8
+        x: 635
+        y: 774
+        width: 174
+        height: 228
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e5c3415511fedda0800000000000000
-      internalID: -5918027786458249756
+      spriteID: c49b5f035d4cea550800000000000000
+      internalID: 6174088559100016972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Four_Animals_3
+      name: 2Animal 1_3
       rect:
         serializedVersion: 2
-        x: 513
-        y: 1305
-        width: 216
-        height: 308
+        x: 64
+        y: 504
+        width: 161
+        height: 206
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,42 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d0fc66422f2083b0800000000000000
-      internalID: -5512354119644548904
+      spriteID: 11b6463c8e223c760800000000000000
+      internalID: 7476858189471050513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Four_Animals_4
+      name: 2Animal 1_4
       rect:
         serializedVersion: 2
-        x: 1321
-        y: 1305
-        width: 189
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d13e9782ee6027ff0800000000000000
-      internalID: -39961826741853411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Four_Animals_5
-      rect:
-        serializedVersion: 2
-        x: 575
-        y: 929
+        x: 366
+        y: 525
         width: 193
-        height: 301
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89e8479272f8c4900800000000000000
-      internalID: 670067842933362328
+      spriteID: fabe269ae3aa732f0800000000000000
+      internalID: -993138006705378385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Four_Animals_6
+      name: 2Animal 1_5
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 932
+        x: 611
+        y: 528
         width: 203
-        height: 294
+        height: 211
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec6445ad12be39430800000000000000
-      internalID: 3788630242178123470
+      spriteID: 6ab3415012260da60800000000000000
+      internalID: 7696759657134832550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Four_Animals_7
+      name: 2Animal 1_6
       rect:
         serializedVersion: 2
-        x: 507
-        y: 533
+        x: 9
+        y: 256
         width: 204
-        height: 306
+        height: 207
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4701e8246912e7fa0800000000000000
-      internalID: -5801162340761202572
+      spriteID: 1e5c20c7aae7185e0800000000000000
+      internalID: -1909105496338283039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Four_Animals_8
+      name: 2Animal 1_7
       rect:
         serializedVersion: 2
-        x: 1251
-        y: 526
-        width: 252
-        height: 313
+        x: 299
+        y: 249
+        width: 208
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,8 +303,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3897a2030625c8180800000000000000
-      internalID: -9111817372998927997
+      spriteID: 6ced0e9fecd733cf0800000000000000
+      internalID: -273736824430469434
       vertices: []
       indices: 
       edges: []
@@ -348,15 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Four_Animals_0: 3114291619668919297
-      Four_Animals_1: -644566893464411544
-      Four_Animals_2: -5918027786458249756
-      Four_Animals_3: -5512354119644548904
-      Four_Animals_4: -39961826741853411
-      Four_Animals_5: 670067842933362328
-      Four_Animals_6: 3788630242178123470
-      Four_Animals_7: -5801162340761202572
-      Four_Animals_8: -9111817372998927997
+      2Animal 1_0: 6049960884306057021
+      2Animal 1_1: -9033393703218927490
+      2Animal 1_2: 6174088559100016972
+      2Animal 1_3: 7476858189471050513
+      2Animal 1_4: -993138006705378385
+      2Animal 1_5: 7696759657134832550
+      2Animal 1_6: -1909105496338283039
+      2Animal 1_7: -273736824430469434
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 93c1269b71e440949a14d05bbf01198e
+guid: 62d5cdda28f21354587c0992c5a1a311
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3234121646870264894
-    second: 2 animals new movement_0
+      213: 7098814408508194610
+    second: 1Animal 1_0
   - first:
-      213: -4164232070485481110
-    second: 2 animals new movement_1
+      213: 7350105417377651780
+    second: 1Animal 1_1
   - first:
-      213: 749412420572144294
-    second: 2 animals new movement_2
+      213: -2867341865056959578
+    second: 1Animal 1_2
   - first:
-      213: -8838714206855760653
-    second: 2 animals new movement_3
+      213: 5926067774737491897
+    second: 1Animal 1_3
   - first:
-      213: 1489278261350349191
-    second: 2 animals new movement_4
+      213: -5242435951269170460
+    second: 1Animal 1_4
   - first:
-      213: -1654779917765343871
-    second: 2 animals new movement_5
+      213: 1666764156903194134
+    second: 1Animal 1_5
   - first:
-      213: -2781967672240634125
-    second: 2 animals new movement_6
+      213: 184746436962038882
+    second: 1Animal 1_6
   - first:
-      213: 5384105009795079584
-    second: 2 animals new movement_7
+      213: 7022689097801657046
+    second: 1Animal 1_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -134,13 +134,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2 animals new movement_0
+      name: 1Animal 1_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 774
-        width: 192
-        height: 224
+        x: 8
+        y: 334
+        width: 167
+        height: 119
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c385ed4f771e13d0800000000000000
-      internalID: -3234121646870264894
+      spriteID: 23f3e89e71e048260800000000000000
+      internalID: 7098814408508194610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2 animals new movement_1
+      name: 1Animal 1_1
       rect:
         serializedVersion: 2
-        x: 339
-        y: 779
-        width: 176
-        height: 236
+        x: 239
+        y: 339
+        width: 163
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a696c64befca536c0800000000000000
-      internalID: -4164232070485481110
+      spriteID: 44c18704fe1d00660800000000000000
+      internalID: 7350105417377651780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2 animals new movement_2
+      name: 1Animal 1_2
       rect:
         serializedVersion: 2
-        x: 635
-        y: 774
+        x: 472
+        y: 334
         width: 174
-        height: 228
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,64 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a2e77e30a2766a00800000000000000
-      internalID: 749412420572144294
+      spriteID: 6a38cabf3c72538d0800000000000000
+      internalID: -2867341865056959578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2 animals new movement_3
+      name: 1Animal 1_3
       rect:
         serializedVersion: 2
-        x: 64
-        y: 504
+        x: 705
+        y: 334
+        width: 157
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b72e145e3f9d3250800000000000000
+      internalID: 5926067774737491897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Animal 1_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 157
+        width: 167
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e23dd627402f37b0800000000000000
+      internalID: -5242435951269170460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Animal 1_5
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 160
         width: 161
-        height: 206
+        height: 143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f4f9252244965580800000000000000
-      internalID: -8838714206855760653
+      spriteID: 61e71987b29812710800000000000000
+      internalID: 1666764156903194134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2 animals new movement_4
+      name: 1Animal 1_6
       rect:
         serializedVersion: 2
-        x: 366
-        y: 525
-        width: 193
-        height: 203
+        x: 460
+        y: 158
+        width: 168
+        height: 147
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 789bf7b20bafaa410800000000000000
-      internalID: 1489278261350349191
+      spriteID: 26434a4d7e9509200800000000000000
+      internalID: 184746436962038882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2 animals new movement_5
+      name: 1Animal 1_7
       rect:
         serializedVersion: 2
-        x: 611
-        y: 528
-        width: 203
-        height: 211
+        x: 686
+        y: 151
+        width: 173
+        height: 129
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,52 +303,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1858524ae6a0909e0800000000000000
-      internalID: -1654779917765343871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 animals new movement_6
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 256
-        width: 204
-        height: 207
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f60a7f34277469d0800000000000000
-      internalID: -2781967672240634125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 2 animals new movement_7
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 249
-        width: 208
-        height: 220
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ad9c3eeafe28ba40800000000000000
-      internalID: 5384105009795079584
+      spriteID: 6dae972d68a957160800000000000000
+      internalID: 7022689097801657046
       vertices: []
       indices: 
       edges: []
@@ -323,14 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      2 animals new movement_0: -3234121646870264894
-      2 animals new movement_1: -4164232070485481110
-      2 animals new movement_2: 749412420572144294
-      2 animals new movement_3: -8838714206855760653
-      2 animals new movement_4: 1489278261350349191
-      2 animals new movement_5: -1654779917765343871
-      2 animals new movement_6: -2781967672240634125
-      2 animals new movement_7: 5384105009795079584
+      1Animal 1_0: 7098814408508194610
+      1Animal 1_1: 7350105417377651780
+      1Animal 1_2: -2867341865056959578
+      1Animal 1_3: 5926067774737491897
+      1Animal 1_4: -5242435951269170460
+      1Animal 1_5: 1666764156903194134
+      1Animal 1_6: 184746436962038882
+      1Animal 1_7: 7022689097801657046
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

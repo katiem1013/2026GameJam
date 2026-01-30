@@ -1,34 +1,31 @@
 fileFormatVersion: 2
-guid: 490875d0b1a6020418aaf672dfdb7d30
+guid: 3a5bc697b4abbe24a96be1c717ac0987
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2372740351797483937
-    second: Three Animals_0
+      213: 3158016236620186263
+    second: 4Animal 1_0
   - first:
-      213: 6250863539215445800
-    second: Three Animals_1
+      213: -2763598733707475529
+    second: 4Animal 1_1
   - first:
-      213: -5169092745331323501
-    second: Three Animals_2
+      213: 7325517028921681262
+    second: 4Animal 1_2
   - first:
-      213: 3671518855157512546
-    second: Three Animals_3
+      213: -7868275344129466380
+    second: 4Animal 1_3
   - first:
-      213: -3346059037817988906
-    second: Three Animals_4
+      213: 5341385717902542269
+    second: 4Animal 1_4
   - first:
-      213: -2875990508250475533
-    second: Three Animals_5
+      213: 7476895462906023066
+    second: 4Animal 1_5
   - first:
-      213: -91618929499199332
-    second: Three Animals_6
+      213: 7493369417101480617
+    second: 4Animal 1_6
   - first:
-      213: 6445407504343416169
-    second: Three Animals_7
-  - first:
-      213: 2702452521628324439
-    second: Three Animals_8
+      213: 1685807331444733184
+    second: 4Animal 1_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -137,57 +134,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Three Animals_0
-      rect:
-        serializedVersion: 2
-        x: 453
-        y: 1729
-        width: 257
-        height: 255
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f5620eaa835521fd0800000000000000
-      internalID: -2372740351797483937
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Three Animals_1
-      rect:
-        serializedVersion: 2
-        x: 1273
-        y: 1734
-        width: 238
-        height: 267
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 82fa06a35478fb650800000000000000
-      internalID: 6250863539215445800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Three Animals_2
+      name: 4Animal 1_0
       rect:
         serializedVersion: 2
         x: 8
-        y: 1697
-        width: 8
-        height: 8
+        y: 678
+        width: 257
+        height: 332
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +149,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39d4a7ff881b348b0800000000000000
-      internalID: -5169092745331323501
+      spriteID: 79289aa090783db20800000000000000
+      internalID: 3158016236620186263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Three Animals_3
+      name: 4Animal 1_1
       rect:
         serializedVersion: 2
-        x: 513
-        y: 1359
+        x: 383
+        y: 683
+        width: 238
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b585a70899b5a9d0800000000000000
+      internalID: -2763598733707475529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4Animal 1_2
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 678
         width: 216
-        height: 280
+        height: 308
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 269ffcb32fad3f230800000000000000
-      internalID: 3671518855157512546
+      spriteID: e65a3f0fce679a560800000000000000
+      internalID: 7325517028921681262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Three Animals_4
+      name: 4Animal 1_3
       rect:
         serializedVersion: 2
-        x: 1321
-        y: 1359
+        x: 1115
+        y: 678
         width: 189
-        height: 279
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d89f5588096091d0800000000000000
-      internalID: -3346059037817988906
+      spriteID: 4ffd23e23454ec290800000000000000
+      internalID: -7868275344129466380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Three Animals_5
+      name: 4Animal 1_4
       rect:
         serializedVersion: 2
-        x: 575
-        y: 1010
+        x: 1498
+        y: 699
         width: 193
-        height: 274
+        height: 301
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f3d552dedd6618d0800000000000000
-      internalID: -2875990508250475533
+      spriteID: db50de3b20a602a40800000000000000
+      internalID: 5341385717902542269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Three Animals_6
+      name: 4Animal 1_5
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 1013
+        x: 1796
+        y: 702
         width: 203
-        height: 274
+        height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c98af7ca1118abef0800000000000000
-      internalID: -91618929499199332
+      spriteID: a9c4e392fc443c760800000000000000
+      internalID: 7476895462906023066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Three Animals_7
+      name: 4Animal 1_6
       rect:
         serializedVersion: 2
-        x: 507
-        y: 641
+        x: 62
+        y: 334
         width: 204
-        height: 288
+        height: 306
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96db609d9ffa27950800000000000000
-      internalID: 6445407504343416169
+      spriteID: 9a21c1588cbcdf760800000000000000
+      internalID: 7493369417101480617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Three Animals_8
+      name: 4Animal 1_7
       rect:
         serializedVersion: 2
-        x: 1251
-        y: 634
+        x: 361
+        y: 327
         width: 252
-        height: 253
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,8 +303,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 752d30e004a018520800000000000000
-      internalID: 2702452521628324439
+      spriteID: 005338e06d0356710800000000000000
+      internalID: 1685807331444733184
       vertices: []
       indices: 
       edges: []
@@ -348,15 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Three Animals_0: -2372740351797483937
-      Three Animals_1: 6250863539215445800
-      Three Animals_2: -5169092745331323501
-      Three Animals_3: 3671518855157512546
-      Three Animals_4: -3346059037817988906
-      Three Animals_5: -2875990508250475533
-      Three Animals_6: -91618929499199332
-      Three Animals_7: 6445407504343416169
-      Three Animals_8: 2702452521628324439
+      4Animal 1_0: 3158016236620186263
+      4Animal 1_1: -2763598733707475529
+      4Animal 1_2: 7325517028921681262
+      4Animal 1_3: -7868275344129466380
+      4Animal 1_4: 5341385717902542269
+      4Animal 1_5: 7476895462906023066
+      4Animal 1_6: 7493369417101480617
+      4Animal 1_7: 1685807331444733184
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
