@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class VoiceRec : MonoBehaviour
 {
+    public PlayeMovement playeMovement;
+
     private KeywordRecognizer keywordRecognizer;
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
 
@@ -24,7 +25,7 @@ public class VoiceRec : MonoBehaviour
     private float wallJumpingTime = 0.1f;
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.2f;
-    private Vector2 wallJumpingPower = new Vector2(8f, 16f);
+    private Vector2 wallJumpingPower = new Vector2(4f, 8f);
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -32,6 +33,12 @@ public class VoiceRec : MonoBehaviour
     [SerializeField] private LayerMask wallLayer;
 
     public Explodable explodable;
+
+    private void RecognisedSpeech(PhraseRecognizedEventArgs speech)
+    {
+        Debug.Log(speech.text);
+        actions[speech.text].Invoke();
+    }
 
     private void Start()
     {
@@ -62,28 +69,7 @@ public class VoiceRec : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
-    }
 
-
-    private void RecognisedSpeech(PhraseRecognizedEventArgs speech)
-    {
-        Debug.Log(speech.text);
-        actions[speech.text].Invoke();
-    }
-
-    private void Jump()
-    {
-        rb2D.linearVelocity = new Vector2(0, jumpForce);
-    }
-
-    private void Smash()
-    {
-        explodable.explode();
-        Destroy(explodable.gameObject.GetComponent<BoxCollider2D>());
-    }
-
-    private void WallJump()
-    {
         if (isWallSliding)
         {
             isWallJumping = false;
@@ -97,12 +83,28 @@ public class VoiceRec : MonoBehaviour
         {
             wallJumpingCounter -= Time.deltaTime;
         }
+    }
 
-        if(wallJumpingCounter > 0)
+    private void Jump()
+    {
+        rb2D.linearVelocity = new Vector2(0, jumpForce);
+        WallJump();
+    }
+
+    private void Smash()
+    {
+        explodable.explode();
+        Destroy(explodable.gameObject.GetComponent<BoxCollider2D>());
+    }
+
+    private void WallJump()
+    {
+
+        if (wallJumpingCounter > 0f)
         {
             isWallJumping = true;
             rb2D.linearVelocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
-            wallJumpingCounter = 0;
+            wallJumpingCounter = 0f;
 
             if (transform.localScale.x != wallJumpingDirection)
             {
@@ -128,18 +130,22 @@ public class VoiceRec : MonoBehaviour
 
     private bool IsWalled()
     {
-        return Physics2D.OverlapCircle(wallCheck.position, 1f, wallLayer);
+        return Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer);
     }
 
     private void WallSlide()
     {
-        if (IsWalled() && IsGrounded())
+
+        if (IsWalled() && !IsGrounded())
         {
+            playeMovement.moving = false;
             isWallSliding = true;
-            rb2D.linearVelocity = new Vector2(rb2D.linearVelocityX, Mathf.Clamp(rb2D.linearVelocityY, -wallSlideSpeed, float.MaxValue));
+            rb2D.linearVelocity = new Vector2(rb2D.linearVelocity.x, Mathf.Clamp(rb2D.linearVelocity.y, -wallSlideSpeed, float.MaxValue));
         }
 
-        else
-            isWallSliding= false;
+        else{
+            isWallSliding = false;
+            playeMovement.moving = true;
+        }
     }
 }
