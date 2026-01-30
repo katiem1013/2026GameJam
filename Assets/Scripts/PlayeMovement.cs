@@ -37,5 +37,17 @@ public class PlayeMovement : MonoBehaviour
         return currentAnim;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Spike") || collision.gameObject.CompareTag("BreakableObj"))
+        {
+            // Calculate the direction away from the wall
+            Vector2 pushDirection = (transform.position - collision.transform.position).normalized;
+
+            // Apply force to the Rigidbody2D
+            float pushForce = 5f;
+            GetComponent<Rigidbody2D>().AddForce(pushDirection * pushForce, ForceMode2D.Impulse);
+        }
+    }
 
 }
