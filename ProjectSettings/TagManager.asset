@@ -4,7 +4,15 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Platformer
+  - Platform
+  - BreakableObj
+  - ground
+  - Obstacle
+  - BombPickup
+  - Enemy
+  - ExplosionFX
+  - Bullet
+  - HealthBar
   layers:
   - Default
   - TransparentFX
@@ -12,9 +20,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - DestroyedPieces
+  - Ground
+  - Wall
   - 
   - 
   - 
