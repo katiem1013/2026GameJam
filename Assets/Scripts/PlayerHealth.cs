@@ -25,6 +25,11 @@ public class PlayerHealth : MonoBehaviour
         {
             death.DeathMenu();
         }
+
+        if (playerLives > 4)
+        {
+            playerLives = 4;
+        }
     }
 
     // takes away a life
@@ -41,6 +46,19 @@ public class PlayerHealth : MonoBehaviour
         }
             
        
+    }
+
+    public void GainLives(float LivesGained)
+    {
+        if (playerLives < 4)
+        {
+            takingDamage = true;
+            playerLives += LivesGained;
+            print(playerLives);
+
+        }
+
+
     }
 
     // stops the player from instant dying on spikes

@@ -145,8 +145,12 @@ public class VoiceRec : MonoBehaviour
     private void Jump()
     {
         // adds to the velocity to make the character jump
-        rb2D.linearVelocity = new Vector2(0, jumpForce);
-        WallJump();
+        if (IsGrounded())
+        {
+            rb2D.linearVelocity = new Vector2(0, jumpForce);
+            WallJump();
+        }
+        
     }
 
    
