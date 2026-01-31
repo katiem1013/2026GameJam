@@ -15,6 +15,7 @@ TagManager:
   - HealthBar
   - Spike
   - Wall
+  - HealthPack
   layers:
   - Default
   - TransparentFX

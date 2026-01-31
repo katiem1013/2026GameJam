@@ -4109,6 +4109,7 @@ GameObject:
   - component: {fileID: 5040746046619006753}
   - component: {fileID: 2764197400384068827}
   - component: {fileID: 972470296132960549}
+  - component: {fileID: -8732615688516287244}
   m_Layer: 0
   m_Name: Box
   m_TagString: BreakableObj
@@ -4339,6 +4340,19 @@ MonoBehaviour:
   - {fileID: 1460821013298881471}
   - {fileID: 7355361633954430945}
   - {fileID: 3147504591292099170}
+--- !u!114 &-8732615688516287244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8392853403436406939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64d7c1a0119744a46b291e6c38933ca1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Spikes
+  player: {fileID: 0}
 --- !u!1 &8658522959127983346
 GameObject:
   m_ObjectHideFlags: 0
