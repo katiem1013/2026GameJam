@@ -33,6 +33,10 @@ public class VoiceRec : MonoBehaviour
     [SerializeField] private LayerMask wallLayer;
 
     public Explodable explodable;
+    public Death death;
+
+    public AudioSource audioSource;
+    public AudioClip jump, smash;
 
     private void RecognisedSpeech(PhraseRecognizedEventArgs speech)
     {
@@ -67,12 +71,16 @@ public class VoiceRec : MonoBehaviour
         actions.Add("bounce", WallJump);
         actions.Add("hiyah", WallJump);
 
+        actions.Add("restart", death.Restart);
+        actions.Add("menu", death.MainMenu);
+
         // creates the words to listen
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += RecognisedSpeech;
         keywordRecognizer.Start();
 
         rb2D = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -82,7 +90,6 @@ public class VoiceRec : MonoBehaviour
             explodable = FindClosestSmashableObj().GetComponent<Explodable>();
 
         // jumping and wall slide
-
         WallSlide();
 
         // makes the player face left when on the ground
@@ -115,6 +122,8 @@ public class VoiceRec : MonoBehaviour
     private void Smash()
     {
         explodable.explode();
+        audioSource.clip = smash;
+        audioSource.Play();
         Destroy(explodable.gameObject.GetComponent<BoxCollider2D>());
     }
 
@@ -149,6 +158,9 @@ public class VoiceRec : MonoBehaviour
         {
             rb2D.linearVelocity = new Vector2(0, jumpForce);
             WallJump();
+
+            audioSource.clip = jump;
+            audioSource.Play();
         }
         
     }

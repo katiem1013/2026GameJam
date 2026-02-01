@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class PlayerHealth : MonoBehaviour
 
     public PlayeMovement playerMovement;
     public Death death;
+
+    public AudioSource audioSource;
+    public AudioClip hurt;
 
     public void Start()
     {
@@ -64,6 +68,9 @@ public class PlayerHealth : MonoBehaviour
     // stops the player from instant dying on spikes
     public IEnumerator TakeDamageAgain()
     {
+        audioSource.clip = hurt;
+        audioSource.Play();
+
         yield return new WaitForSeconds(1);
         takingDamage = false;
     }

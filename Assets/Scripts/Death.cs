@@ -15,11 +15,25 @@ public class Death : MonoBehaviour
 
     public void Restart()
     {
+        if(deathMenu.activeSelf){
         
-        // clears old audio
-        voiceRec.ClearAudio();
+            // clears old audio
+            voiceRec.ClearAudio();
 
-        // loads new scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);        
+            // loads new scene
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);       } 
+    }
+
+    public void MainMenu()
+    {
+        if (deathMenu.activeSelf)
+        {
+
+            // clears old audio
+            voiceRec.ClearAudio();
+
+            // loads new scene
+            SceneManager.LoadScene(0);
+        }
     }
 }
