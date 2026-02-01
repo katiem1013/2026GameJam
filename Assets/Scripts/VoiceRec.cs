@@ -1,11 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Windows.Speech;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
+
 
 public class VoiceRec : MonoBehaviour
 {
