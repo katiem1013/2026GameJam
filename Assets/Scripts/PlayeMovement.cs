@@ -11,6 +11,7 @@ public class PlayeMovement : MonoBehaviour
     public float currentAnimals;
     public Animator animator;
 
+    public GameObject levelCompelete;
 
     void Start()
     {
@@ -50,6 +51,11 @@ public class PlayeMovement : MonoBehaviour
             // Apply force to the Rigidbody2D
             float pushForce = 5f;
             GetComponent<Rigidbody2D>().AddForce(pushDirection * pushForce, ForceMode2D.Impulse);
+        }
+
+        if (collision.gameObject.CompareTag("GameEnd"))
+        {
+            levelCompelete.SetActive(true);
         }
     }
 

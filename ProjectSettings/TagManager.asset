@@ -16,6 +16,7 @@ TagManager:
   - Spike
   - Wall
   - HealthPack
+  - GameEnd
   layers:
   - Default
   - TransparentFX

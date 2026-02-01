@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Serialization;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Windows.Speech;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
@@ -38,6 +40,8 @@ public class VoiceRec : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip jump, smash;
 
+    public GameObject levelCompelete;
+
     private void RecognisedSpeech(PhraseRecognizedEventArgs speech)
     {
         // listens for the speech and prints it in the console
@@ -58,6 +62,11 @@ public class VoiceRec : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        ClearAudio();
+    }
+
     private void Start()
     {
         // voice controls
@@ -73,6 +82,8 @@ public class VoiceRec : MonoBehaviour
 
         actions.Add("restart", death.Restart);
         actions.Add("menu", death.MainMenu);
+
+        actions.Add("finished", ReturnToMenu);
 
         // creates the words to listen
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
@@ -117,6 +128,13 @@ public class VoiceRec : MonoBehaviour
         }
     }
 
+    public void ReturnToMenu()
+    {
+        if (levelCompelete.activeSelf)
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 
     // smash commands 
     private void Smash()
@@ -165,7 +183,6 @@ public class VoiceRec : MonoBehaviour
         
     }
 
-   
     private void WallJump()
     {
         // character bounces off the wall
